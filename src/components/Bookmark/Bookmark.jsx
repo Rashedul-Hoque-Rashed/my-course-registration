@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 const Bookmark = ({ bookmark, idx }) => {
     return (
         <div>
-            <p className="mb-2 text-base font-normal text-slate-500">{idx}. {bookmark.course_name}</p>
+            <p className="mb-2 text-base font-normal text-slate-500">{idx+1}. {bookmark.course_name}</p>
         </div>
     );
 };
