@@ -18,7 +18,7 @@ const Course = ({ course, handelBookmarks }) => {
                     <p className="text-slate-500 font-medium flex gap-2"><BsBook className='h-6 text-black' /> Credit: {credit}hr</p>
                 </div>
             </div>
-            <button onClick={() => handelBookmarks(course)} className="text-white bg-blue-600 text-lg font-semibold w-full rounded-lg p-2 mb-4">Select</button>
+            <button onClick={() => handelBookmarks(course)} className="text-white bg-blue-600 text-lg font-semibold w-full rounded-lg p-2 mb-4 hover:bg-blue-800">Select</button>
         </div>
     );
 };

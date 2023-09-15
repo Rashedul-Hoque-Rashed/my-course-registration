@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const [bookmarks, setBookmarks] = useState([]);
   const [totalHour, setTotalHour] = useState(0);
-  const [remaining, setRemaining] = useState(0);
+  const [remaining, setRemaining] = useState(20);
   const [totalPrice, setTotalPrice] = useState(0);
 
   const handelBookmarks = (course) => {

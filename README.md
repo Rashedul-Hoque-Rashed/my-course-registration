@@ -1,8 +1,10 @@
-# React + Vite
+## 3 Project features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- if you selected any duplicate item then you get a toast.
+- your selected items total price is given by 'total price' elements.
+- you can not selected more then 20 credit.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Discuss how you managed the state in your assignment project.
+
+- useState is the first tool I should reach for to manage state in my components. It can take accept any valid data value, including primitive and object values. Additionally, its setter function can be passed down to other components as a callback function.
