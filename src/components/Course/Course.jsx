@@ -1,7 +1,8 @@
 import { BsBook } from 'react-icons/bs';
 import { MdAttachMoney } from 'react-icons/md';
+import { PropTypes } from "prop-types";
 
-const Course = ({ course }) => {
+const Course = ({ course, handelBookmarks }) => {
     const { course_name, course_img, credit, price, course_details } = course;
     return (
         <div className="bg-slate-100 rounded-lg p-4">
@@ -17,9 +18,14 @@ const Course = ({ course }) => {
                     <p className="text-slate-500 font-medium flex gap-2"><BsBook className='h-6 text-black' /> Credit: {credit}hr</p>
                 </div>
             </div>
-            <button className="text-white bg-blue-600 text-lg font-semibold w-full rounded-lg p-2 mb-4">Select</button>
+            <button onClick={() => handelBookmarks(course)} className="text-white bg-blue-600 text-lg font-semibold w-full rounded-lg p-2 mb-4">Select</button>
         </div>
     );
 };
+
+Course.propTypes = {
+    course: PropTypes.object,
+    handelBookmarks: PropTypes.func 
+}
 
 export default Course;
